@@ -16,10 +16,19 @@ header {
     max-width: 1160px;
 }
 
+marquee {
+    background-color: rgb(254, 163, 1);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px;
+}
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .nav-logo-container {
@@ -76,6 +85,10 @@ header {
     padding: 10px;
     width: 197px;
 
+}
+
+.hamburger-menu {
+    display: none;
 }
 
 .banner-container {
@@ -226,8 +239,16 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
     margin-top: 50px;
+}
+
+.slider-button-container span {
+    width: 60px;
+    height: 60px;
+}
+
+.slider-button-container i {
+    font-size: 45px;
 }
 
 .stories-card-container {
@@ -267,7 +288,9 @@ main {
     font-size: 15px;
     font-weight: 500;
     max-width: 175px;
-    margin-left: 20px;
+    margin-left: 25px;
+    position: relative;
+    bottom: 35px;
 }
 
 .lg-story-title {
@@ -294,7 +317,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .stories-card img {
@@ -310,6 +333,13 @@ main {
     border-radius: 48px;
     padding: 7px;
     background: rgb(149, 178, 38);
+    position: relative;
+    bottom: 30px;
+    max-width: 175px;
+}
+
+.purple {
+    background-color: rgb(93, 88, 240);
 }
 
 .stories-card-title {
@@ -349,12 +379,14 @@ footer {
     align-items: flex-start;
     justify-content: space-between;
     margin: 0 auto;
+    max-width: 1160px;
 }
 
 .about-us {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 400px;
 }
 
 .logo-footer {
@@ -430,29 +462,32 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
+/* Mobile Responsive Layout */
 
 @media only screen and (max-width: 576px) {
     .navbar {
-        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5px 10px;
         border-bottom: 0.5px solid rgb(254, 163, 1);
+    }
+
+    .hamburger-menu {
+        display: flex;
     }
 
     .banner-container {
         flex-direction: column-reverse;
+        padding: 5px;
     }
 
+    marquee,
+    .logo-title,
+    .nav-links,
+    .nav-button-container,
     .banner-des-container br,
     .stories-lg-card-container,
-    .footer-container br {
+    .footer-container>p br {
         display: none;
     }
 
@@ -462,7 +497,8 @@ footer {
     }
 
     .banner-title {
-        font-size: 35px;
+        font-size: 32px;
+        line-height: 40px;
     }
 
     .banner-des {
@@ -502,9 +538,16 @@ footer {
         text-align: center;
     }
 
-    .footer-container {
-        flex-direction: column;
-        gap: 10px;
+    footer {
+        padding: 10px;
     }
+
+    .footer-container {
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 10px;
+    }
+
 
 }
