@@ -1,5 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.quicksand {
+    font-family: "Quicksand", serif;
+}
+
+header {
+    margin: 0 auto;
+    max-width: 1160px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-title {
+    color: rgb(17, 17, 17);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+}
+
+.nav-links>ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav-links>ul li:nth-child(1) a {
+    color: rgb(254, 163, 1);
+}
+
+.nav-links>ul li:nth-child(2) a {
+    color: rgb(1, 172, 253);
+}
+
+.nav-links>ul li:nth-child(3) a {
+    color: rgb(5, 212, 223);
+}
+
+.nav-links>ul li:nth-child(4) a {
+    color: rgb(93, 88, 239);
+}
+
+.nav-links li>a {
+    text-decoration-line: none;
+}
+
+.nav-btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(254, 163, 1);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 10px;
+    width: 197px;
+
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-img-container img {
+    width: 100%;
+}
+
+.banner-des-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.banner-title {
+    font-size: 56px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.banner-des {
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.banner-btn {
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    width: 197px;
+    /* max-height: 50px; */
+}
+
+.emp {
+    color: rgb(254, 163, 1);
+}
+
+.vision {
+    color: rgb(1, 172, 253);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-des-container br {
+        display: none;
+    }
+
+    .banner-title,
+    .banner-des {
+        text-align: center;
+    }
+
+    .banner-btn {
+        margin: 0 auto;
+        max-width: 150px;
+    }
 }
