@@ -35,6 +35,11 @@ marquee {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    gap: 5px;
+}
+
+.nav-logo-container img {
+    width: 100%;
 }
 
 .logo-title {
@@ -81,10 +86,10 @@ marquee {
     background-color: rgb(254, 163, 1);
     font-size: 20px;
     font-weight: 600;
-    border-radius: 12px;
     padding: 10px;
     width: 197px;
-
+    border-radius: 12px;
+    border: none;
 }
 
 .hamburger-menu {
@@ -173,7 +178,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .curriculum-card {
@@ -187,9 +192,8 @@ main {
     border: 1px solid rgb(222, 245, 255);
     border-radius: 18px;
     box-shadow: inset 0px 0px 28px 1px rgba(0, 0, 0, 0.05);
-    max-width: 365px;
-    max-height: 475px;
-
+    width: 365px;
+    height: 475px;
 }
 
 .curriculum-card-title {
@@ -203,6 +207,7 @@ main {
     font-family: Raleway;
     font-size: 15px;
     font-weight: 500;
+    text-align: center;
 }
 
 .card-1 {
@@ -239,7 +244,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 80px;
+    margin-bottom: 60px;
 }
 
 .slider-button-container span {
@@ -255,7 +261,7 @@ main {
     margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+    gap: 15px;
 }
 
 .stories-grid-card-container {
@@ -276,7 +282,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 540px;
 }
 
 .lg-story-btn {
@@ -288,7 +293,7 @@ main {
     font-size: 15px;
     font-weight: 500;
     max-width: 175px;
-    margin-left: 25px;
+    margin-left: 30px;
     position: relative;
     bottom: 35px;
 }
@@ -298,7 +303,8 @@ main {
     font-family: Quicksand;
     font-size: 24px;
     font-weight: 700;
-    padding-left: 20px;
+    padding-left: 35px;
+    text-align: left;
 }
 
 .lg-story-des {
@@ -306,7 +312,8 @@ main {
     font-family: Raleway;
     font-size: 15px;
     font-weight: 500;
-    padding-left: 20px;
+    padding-left: 35px;
+    text-align: left;
 }
 
 .stories-card {
@@ -481,7 +488,6 @@ footer {
         padding: 5px;
     }
 
-    marquee,
     .logo-title,
     .nav-links,
     .nav-button-container,
@@ -499,26 +505,34 @@ footer {
     .banner-title {
         font-size: 32px;
         line-height: 40px;
+        font-weight: 700;
     }
 
     .banner-des {
         font-size: 14px;
-
+        font-weight: 500;
+        line-height: 18px;
     }
 
     .banner-btn {
         margin: 0 auto;
         max-width: 150px;
+        font-size: 16px;
     }
 
     .curriculum-header {
         font-size: 26px;
-
+        font-weight: 700;
     }
 
     .curriculum-card-container {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .curriculum-card {
+        max-width: 365px;
+        max-height: 475px;
     }
 
     .slider-button-container span {
@@ -536,6 +550,11 @@ footer {
 
     .stories-card {
         text-align: center;
+    }
+
+    .stories-card-title {
+        font-size: 12px;
+        text-align: left;
     }
 
     footer {
